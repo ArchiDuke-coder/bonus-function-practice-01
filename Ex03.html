@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let num1 = parseFloat(prompt('Enter first number: '));
+        let num2 = parseFloat(prompt('Enter second number: '));
+        document.write(choice(num1,num2));
+
+        function choice(a,b){
+            if (a>b){
+                alert(a+' is larger than '+b);
+            } else {
+                return a+b;
+            }
+        }
+    </script>
+</body>
+</html>

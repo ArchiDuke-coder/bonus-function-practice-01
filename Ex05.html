@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+
+    let star = ['Polaris','Aldebaran','Deneb','Vega','Altair','Dubne','Regulus'];
+    let constell = ['Ursa Minor','Taurus','Cygnus','Lyra','Aquila','Ursa Major','Leo'];
+    let input = prompt('Enter the name of a star: ');
+    alert(Find(input));
+
+    function Find(str){
+        let check = false;
+        for (let i = 0; i < star.length; i++){
+            if (str == star[i]){
+                check = true;
+                return constell[i];
+            }
+        }
+        if (check == false){
+            return 'Not found';
+        }
+    }
+</script>
